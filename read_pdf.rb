@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'pdf-reader'
 
-reader = PDF::Reader.open("C:/thisinh.pdf")
+reader = PDF::Reader.new("C:/thisinh.pdf")
 
 reader.pages.each do |page|
     puts " **************** Page TEXT *********************************"
